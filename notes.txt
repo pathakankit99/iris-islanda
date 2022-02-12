@@ -1,0 +1,8 @@
+git commit -am "added game logic and logo and arrow"
+git push heroku master
+heroku config:set MONGODB_URI="mongodb+srv://crypticmeta:dsrftgdy76@cluster0.yvxmk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+mongo-db
+crypticmeta
+dsrftgdy76
+
+url: mongodb+srv://crypticmeta:dsrftgdy76@cluster0.yvxmk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

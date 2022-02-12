@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Play';
+  src: url('../fonts/Play-Regular.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Play';
+  src: url('../fonts/Play-Bold.ttf');
+  font-style: normal;
+}
+$layout-breakpoint-sm:640px;
+$layout-breakpoint-md:768px;
+$layout-breakpoint-lg:1024px;
+$layout-breakpoint-xl:1280px;
+$layout-breakpoint-2xl:1536px;
+*{
+  font-family: 'Play', sans-serif;
+}
+
+// hero
+.hero-img{
+  animation-name: float;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0px);}
+  20% {transform: translateY(10px);}
+  50% {transform: translateY(0px);}
+  80% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+
+//gallery
+.gallery .card{
+  @apply w-full md:w-6/12 lg:w-4/12;
+}
+.gallery .card{
+  overflow: hidden;
+}
+.gallery .card img{
+  transition: all 0.3s ease-in-out;
+}
+.gallery .card:hover img{
+  transform: scale(1.1);
+}
+
+//lore
+.lore-container .card{
+  @apply w-full md:w-6/12 lg:w-4/12 cursor-pointer;
+}
+.lore-container .card{
+  overflow: hidden;
+}
+.lore-container .card img{
+  transition: all 0.3s ease-in-out;
+}
+.lore-container .card:hover img{
+  transform: scale(1.1);
+}
+.lore-container .info{
+  @apply bg-gray-100 p-2;
+}
+.lore-container .lore{
+   @apply rounded-xl overflow-hidden shadow-xl;
+}
